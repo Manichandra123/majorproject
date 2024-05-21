@@ -1,0 +1,99 @@
+ <% layout("/layouts/boilerplate") -%>
+<body>
+<style>
+  #filters{
+    display: flex;
+    margin-left:  3rem;
+  }
+  .filter{
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+  }
+  .filetr p {
+    font-size: 0.8rem;
+  }
+
+  .filter:hover{
+   opacity: 1; 
+   cursor: pointer;
+  }
+</style>
+
+<div id="filters">
+  <div class="filter">
+    <div>  <i class="fa-solid fa-fire"></i>  </div>
+    <p>Trending</p> 
+     </div>
+     <div class="filter">
+      <div> <i class="fa-solid fa-mug-hot"></i></div>
+      <p>Bed&Breakfast</p> 
+       </div>
+       <div class="filter">
+        <div> <i class="fa-solid fa-mountain-city"></i></div>
+        <p>AmazingView</p> 
+         </div>
+        
+     <div class="filter">
+      <div>  <i class="fa-solid fa-school"></i></div>
+      <p>cabins</p> 
+       </div>
+       <div class="filter">
+        <div> <i class="fa-solid fa-umbrella-beach"></i> </div>
+        <p> Beach</p> 
+      </div>
+      <div class="filter">
+        <div> <i class="fa-solid fa-water"></i></div>
+        <p>Lake</p> 
+         </div>
+         <div class="filter">
+          <div> <i class="fa-solid fa-bed"></i></div>
+          <p>Rooms</p> 
+        </div>
+        <div class="filter">
+          <div> <i class="fa-solid fa-tree"></i></div>
+          <p> Nature</p> 
+           </div>
+           <div class="filter">
+            <div> <i class="fa-solid fa-igloo"></i></div>
+            <p>igloo</p> 
+          </div>
+          <div class="filter">
+            <div> <i class="fa-solid fa-city"></i></div>
+            <p>City</p> 
+             </div>
+             <div class="filter">
+              <div><i class="fa-solid fa-campground"></i></div>
+              <p>Camping</p> 
+            </div>
+            <div class="filter">
+              <div> <i class="fa-solid fa-bowling-ball"></i></div>
+              <p> Games</p> 
+            </div>
+            
+</div>
+ 
+<div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1 mt-3" >
+
+<% for(let listing of allListings ) { %>
+  <a href="/listings/<%=listing._id %>" class="anc"> 
+    <div class="card col" style="width: 20rem;" >
+      <img src="<%=listing.image.url%>" class="card-img-top"   alt="..."  style="height: 20rem "; \ >
+        <div class="card-body">
+          <p class="card-text">
+            <%= listing.title%>  <br><br>
+            &#8377; <%= listing.price.toLocaleString("en-IN") %>/night
+          </p>
+        </div>
+    </div>
+  </a>        
+<% }  %>
+</div>
+ 
+     
+     
+</body>
+ 
+
+   

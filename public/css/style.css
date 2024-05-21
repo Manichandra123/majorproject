@@ -1,0 +1,96 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ .container{
+    flex: 1;
+ }
+.navbar{
+height: 5rem;
+}
+
+.fa-worm{
+    color: red;
+    font-size: 2rem;
+}
+.f-info{
+    width: 100%;
+}
+.f-info-links{
+    width: 100%;
+}
+.f-social{
+    width: 100%;
+     
+    
+}
+.f-social i {
+    padding: 5px;   
+}
+.f-info{
+    text-align: center;
+    height: 7rem;
+    display: flex ;
+    background-color:  #ebebeb;
+    flex-wrap: wrap;
+    justify-content:  center;
+    align-items: space-evenly; 
+    padding: 1rem;
+
+     
+
+}
+.f-info-links a{
+    text-decoration: none;
+    color: black;   
+}
+.f-info-links a:hover{
+    text-decoration:underline;
+    color: black;   
+}
+
+ .card{
+   margin-bottom: 2rem; 
+   border: none !important;
+    
+   
+ }
+ .card-img-top{
+    opacity: 1;
+    width: 100% !important;
+    border-radius: 1rem !important;
+    object-fit: cover !important;
+    
+ }
+ .card-body{
+    padding: 0 !important;
+ }
+
+ .anc{
+    text-decoration: none !important;
+    color: black;
+    width: none !important;
+    height: none !important;
+   
+ }
+.edit{
+    transform: translate(20% ,20%);
+    width: 60%;
+}
+ .show-img{
+    height: 40vh !important;
+ }
+
+ .btns{
+    display: flex;
+    flex-direction: row;
+     gap: 10px;
+ }
+.review-card{
+    border: 1px solid black !important;
+    padding: 5px;
+}
